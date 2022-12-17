@@ -1,0 +1,63 @@
+@keyframes background {
+    0%, 100% {
+        background-image: url(./imgs/exterior.jpg);
+    }
+    25% {
+        background-image: url(./imgs/tostada-pizza.jpg);
+    }
+    50% {
+        background-image: url(./imgs/cocktails.jpg);
+    }
+    75% {
+        background-image: url(./imgs/dining-room.jpg);
+    }
+}
+
+h1 {
+    font-family: oldLondon;
+    font-weight: 100;
+    font-size: 72px;
+}
+
+h3 {
+    font-family: oldStandard;
+}
+
+.main {
+    animation-name: background;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(3, both);
+    position: absolute;
+    top: 8vh;
+    left: 0;
+    bottom: 82px;
+    height: 84vh;
+    width: 100vw;
+    background-size: cover;
+}
+
+.main * {
+    color: white;
+}
+
+.main a {
+    text-decoration: none;
+    padding: 2vh;
+    border: 2px solid white;
+}
+
+.main a:hover {
+    box-shadow: 0 0 0.25em #ffdb00;
+    text-shadow: 0 0 0.25em #ffdb00;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2vh;
+    height: 84vh;
+}

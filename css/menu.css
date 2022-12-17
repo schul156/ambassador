@@ -1,0 +1,106 @@
+html {
+    height:100%;
+}
+
+h1 {
+    font-family: oldLondon;
+    font-weight: 100;
+    font-size: 36px;
+}
+
+h2 {
+    font-family: oldLondon;
+    font-weight: 100;
+    font-size: 24px;
+}
+
+h3 {
+    font-size: small;
+}
+
+ol {
+    padding-left: 10px;
+}
+
+.menu p, .menu li {
+    font-size: 12px;
+}
+
+.menu {
+    padding-top: 82px;
+}
+
+.menu > h1 {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+
+.menubar {
+    position: fixed;
+    height: 20px;
+    width: calc(100% - 25px);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: black;
+    padding: 5px;
+}
+
+.menubar > a {
+    text-decoration: none;
+    color: red;
+    background-color: black;
+    padding: 5px;
+}
+
+.menubar > a:hover {
+    color: red;
+    background-color: #333333;
+    text-shadow: 0 0 0.25em red;
+}
+
+.menusection {
+    grid-auto-flow: column;
+    gap: 5%;
+    padding-bottom: 25%;
+}
+
+div p {
+    word-wrap: normal;
+}
+
+.sandwiches, .spirits {
+    grid-template-rows: repeat(3, 30%);
+}
+
+.sandwiches > .subsection {
+    grid-row: 1 / span 3;
+}
+
+.apps, .pasta, .salads {
+    grid-template-rows: repeat(2, 45%);
+}
+
+.ftd {
+    grid-template-columns: repeat(3, 30%);
+    grid-template-rows: repeat(2, 50%);
+}
+
+.pizza {
+    grid-template-columns: repeat(3, 30%);
+}
+
+.red {
+    color: #6b1d00;
+}
+
+.active {
+    display: grid;
+}
+
+.hidden {
+    display: none;
+}
+

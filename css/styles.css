@@ -1,0 +1,94 @@
+@font-face {
+    font-family: oldLondon;
+    src: url(fonts/OldLondon.ttf);
+}
+
+@font-face {
+    font-family: oldStandard;
+    src: url(fonts/OldStandardTT-Regular.ttf);
+}
+
+html {
+    font-family: oldStandard;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+img {
+    max-width: 100%;
+}
+
+.buttonbar {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+    width: 100vw;
+    background-color: black;
+    z-index: 200;
+}
+
+.navbar * {
+    font-family: oldLondon;
+    font-size: 40px;
+    color: #ffdb00;
+}
+
+.navbar > a:hover,
+.navbuttons > a:hover,
+.footer > a:hover,
+.footericons a i:hover {
+    color: #fffb00;
+    text-shadow: 0 0 0.25em #ffdb00;
+}
+
+.navbar > a {
+    padding-left: 1%;
+}
+
+.navbuttons {
+    grid-template-columns: repeat(2, 2.5em);
+}
+
+.navbar > a,
+.navbuttons a,
+.footer a {
+    text-decoration: none;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    height: 8vh;
+    width: 100%;
+    align-items: center;
+    z-index: 200;
+}
+
+.footer *,
+.footericons a {
+    color: #ffdb00;
+}
+
+.footer p {
+    padding-left: 34px;
+}
+
+.footericons {
+    grid-template-columns: repeat(3, 2.5em);
+}
